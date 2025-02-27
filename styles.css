@@ -6,18 +6,45 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-color: white;
+}
+
+header {
+  background-color: lightpink;
+  font-weight: 500;
+  font-style: inherit;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container {display: block
+}
+
+body {
+  background-color: deeppink;
+  border: outset;
+}
+
+.nav-name-text {
+  font-size: xx-large;
+}
+
+.container {
+  font-display: flex;
 }
 
 nav {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  background-color: purple;
+}
+
+li {
+  list-style: none;
 }
 
 nav a {
@@ -28,13 +55,14 @@ nav a {
   border: solid 1px #aaa;
   text-align: center;
   text-decoration: none;
-  color: #555;
+  color: #050101;
 }
 
-nav a[aria-current='page'] {
-  color: #000;
+/* nav a {
+  color: #000
   background-color: #d4d4d4;
-}
+} */
+
 
 main {
   padding: 1rem;
@@ -43,4 +71,19 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.projects{
+  display: flex;
+  justify-content: center;
+}
+
+.projects > section{
+  border: 2px solid chartreuse;
+  margin: 25px;
+  padding: 35px;
+}
+
+.project-header {
+  align-items: center;
 }
